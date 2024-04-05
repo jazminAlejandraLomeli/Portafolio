@@ -1,0 +1,11 @@
+
+# Mostrar URL de manera amigable 
+RewriteEngine On 
+RewriteBase /Portafolio/ 
+
+# Vista para los alumnos Talleres/Alumno
+RewriteRule ^Home$ Views/Home.php [L]
+# Vista inicial para los usuarios (inicio sesion) Taller/Inicio
+RewriteRule ^Proyectos$ Views/Projects.php  [L]
+
+
