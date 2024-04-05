@@ -1,0 +1,179 @@
+@import url("Root.css");
+/* Contenedor del lado izquierdo*/
+@import url("Personal-Data.css");
+/* Contenedor del lado Derecho*/
+@import url("Navegacion.css");
+
+body {
+  background-image: url("/Portafolio/Assets/img/Degradado_3.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /* Centra la imagen horizontal y verticalmente */
+  background-attachment: fixed; /* Fija la imagen en su posición al hacer scroll */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+ 
+
+/* General de las cards */
+.card-style-1,
+.card-style-nav,
+.card-styles {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  margin-bottom: 1.5rem; /* Margen inferior reducido */
+}
+
+/*Card de los datos personales */
+.card-style-1 {
+  max-width: auto;
+}
+/* Card con el contenido */
+.card-styles {
+  margin-left: 3.1rem;
+  padding: 1rem 2rem;
+}
+/* Card de menu principal que siempre se debe de ver */
+.card-style-nav {
+  position: fixed;
+  top: 6rem; /* Ajusta la posición vertical según tus necesidades */
+  right: 3.3rem; /* Fija el contenedor en el lado derecho */
+  max-height: calc(
+    100vh - 4rem
+  ); /* Limita la altura para evitar que se extienda más allá del alto de la ventana */
+  overflow-y: auto; /* Añade desplazamiento vertical si el contenido es demasiado largo */
+}
+
+/* BOTON NAVBAR*/
+.boton_nav i {
+  color: var(--color-black);
+  font-size: 1.7rem;
+}
+.boton_nav i:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  color: var(--color-blue);
+}
+
+/* Contenedor Principal CENTRO */
+.container {
+  margin: 0;
+  padding: 0;
+  /* Arriba | Derecha | Abajo | Izquierda 
+  margin: 15rem 0.6rem 15rem 0.6rem;*/
+  margin: 15rem 0.5rem; /* Margen para pantallas grandes */
+}
+
+/* ///////////// DATOS DEL PERFIL   ///////// */
+
+.align-items-center {
+  align-items: center;
+}
+/* ///////// CONTENEDOR //////// */
+
+.main {
+  /* Contenedores en la misma*/
+  margin: 6rem 0.7rem; /* Margen para pantallas medianas y grandes */
+}
+
+/* Media Query */
+
+
+/* Para pantallas pequeñas Menor a 766px*/
+@media (max-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+  }
+  .icons {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+  }
+  .icon_info {
+    margin-top: 0.2rem;
+    max-width: 5rem; /* Establece un ancho máximo rgba(243, 243, 243, 0.856); */
+    max-height: 2.6rem;
+  }
+  /* Tamanño de los iconos */
+  .iconos_redes img {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+  }
+  .Informacion {
+    font-size: 0.95rem;
+  }
+  .card-style-nav {
+    right: 3rem; /* Fija el contenedor en el lado derecho */
+  }
+  /* Vertical hacia abajo*/
+  .card-styles {
+    margin-left: 0rem;
+  }
+ 
+}
+
+
+@media (min-width: 769px) and (max-width: 835px) {
+ .iconos_redes img {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+  }
+  /* Card con el contenido */
+  .card-styles {
+    margin-left: 1.9rem;
+    
+  }
+   .card-style-nav {
+    right: 1.5rem; /* Fija el contenedor en el lado derecho */
+  }
+
+}
+
+@media (min-width: 836px) and (max-width: 900px) {
+ .iconos_redes img {
+    max-width: 1.8rem;
+    max-height: 1.8rem;
+  }
+  /* Card con el contenido */
+  .card-styles {
+    margin-left: 2.5rem;
+    
+  }
+   .card-style-nav {
+    right: 1.5rem; /* Fija el contenedor en el lado derecho */
+  }
+
+}
+
+
+@media (min-width: 901px) and (max-width: 994px) {
+  .iconos_redes img {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin: 1px;
+  }
+  /* Card con el contenido */
+  .card-styles {
+    margin-left: 2.7rem;
+    
+  }
+   .card-style-nav {
+    right: 1.5rem; /* Fija el contenedor en el lado derecho */
+  }
+
+}
+
+/* Pantalla grande */ 
+@media (min-width: 994px) and (max-width: 1035px) {
+  
+ /* Card con el contenido */
+  .card-styles {
+    margin-left: 2.5rem;
+    
+  }
+   .card-style-nav {
+    right: 0rem; /* Fija el contenedor en el lado derecho */
+  }
+}
+

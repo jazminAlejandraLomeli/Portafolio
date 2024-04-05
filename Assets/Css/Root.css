@@ -1,0 +1,24 @@
+/* variables.css */
+
+:root {
+  --color-gray: rgba(235, 235, 235, 0.856);
+  --color-gray-2: rgba(218, 217, 217, 0.856);
+
+  --color-white:  rgba(255, 255, 255, 0.856);
+  --color-black: black;
+  --color-blue:  #1e8de2;
+  --color-secundario: #6c757d;
+  --color-fondo: #f8f9fa;
+}
+
+/* PALETA DE COLORES 
+ #d9d5e8  
+ #1e8de2  
+ #c87eac  
+ #7fadec  
+ #ce9cc1  
+ #a4bbec  
+ #d2b0d0  
+ #b8c4ea 
+
+*/

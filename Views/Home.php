@@ -18,30 +18,32 @@
   <?php
   require_once("Layouts/Nav/Button.php")
   ?>
-  </aside>
+   
   <!-- Contenedor Principal -->
   <div class="container mt-2">
 
-    <div class="row d-flex justify-content-between main">
+    <div class="row d-flex justify-content-start main">
       <!-- Datos Personales  -->
-      <aside class="card-styles col-xl-3 col-md-3 col-sm-12">
-
+      <aside class="card-style-1 col-xl-3 col-md-3 col-sm-12">
         <?php
         require_once("Layouts/Info_Perfil.php")
         ?>
       </aside>
       <!-- Contenido de las vistas -->
       <main class="card-styles col-xl-6 col-md-6 col-sm-12">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae ea enim temporibus minima eaque sit quibusdam quia deleniti quas unde explicabo possimus non molestiae, veniam, debitis at commodi suscipit.
-
-
-        <br>
+        <h3>Titulo de la vista </h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae ea enim temporibus minima eaque sit quibusdam quia }
+        <br><br>deleniti quas unde explicabo possimus non molestiae, veniam, debitis at commodi suscipit.
+        <br><br>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi aliquam vel quaerat incidunt suscipit rerum culpa molestias quae autem itaque dolor deleniti, optio, harum ratione, atque neque ipsum nostrum tempora?
-
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum eveniet, dolores et iste omnis nam consequatur obcaecati, aperiam, quis eligendi temporibus quia cupiditate perspiciatis minima nulla inventore veritatis quisquam.
+        <br><br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam modi minima quia repudiandae amet illo incidunt? Ea voluptas laborum itaque consequatur. Distinctio corrupti earum labore harum, rerum perspiciatis quibusdam recusandae!
       </main>
 
       <!-- Navegación en la pagina web  -->
-      <div class="card-styles col-xl-2 col-md-2 col-sm-12 d-none d-md-block">
+      <div class="card-style-nav  col-xl-2 col-md-2 col-sm-12 d-none d-md-block">
         <?php
         require_once("Layouts/Nav/Navegacion.php")
         ?>
@@ -60,7 +62,7 @@
     <?php
     require_once("Layouts/Scripts/Scripts.php")
     ?>
-
+  </div>
 
 </body>
 

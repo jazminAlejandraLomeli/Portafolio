@@ -1,0 +1,45 @@
+/* ///////// NAVEGACION ////// */
+
+.nav-principal {
+    background-color: black;
+}
+.navegacion {
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Acomoda los elementos verticalmente */
+  padding: 0 0.5rem;
+}
+
+.icons {
+  margin-bottom: 0.5rem;
+
+  border-radius: 5px;
+  border: 1px solid #c2bebe;
+
+  text-align: center; /* Centra el contenido horizontalmente */
+  /* Arriba | Derecha | Abajo | Izquierda */
+  padding: 0rem 0.5rem;
+}
+
+.icons i {
+  padding-top: 0;
+  display: block; /* Hace que el icono sea un bloque para que ocupe todo el ancho disponible */
+  font-size: 2rem;
+}
+
+.icons span {
+  display: block; /* Hace que el span sea un bloque */
+}
+
+.offcanvas-body {
+  /* Arriba | Derecha | Abajo | Izquierda */
+
+  margin: 0rem 2rem 0 1.5rem;
+}
+.menu-Sidebar {
+  border: 1px solid #c2bebe;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none; /* Elimina el estilo de viñeta */
+}

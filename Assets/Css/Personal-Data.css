@@ -1,0 +1,130 @@
+
+.principal-perfil{
+    height: auto;
+}
+/* Imagen del perfin */
+.perfil {
+  display: flex;
+  justify-content: center;
+}
+
+.cont-img {
+  width: 10rem;
+}
+
+.col img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.custom-img {
+  border-radius: 8px;
+  width: 10rem; /* Establece el ancho deseado */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  display: block; /* Asegura que la imagen sea un elemento de bloque */
+  margin-top: -4.3rem; /* Mueve la imagen hacia arriba para que sobresalga del aside */
+  position: relative; /* Permite ajustar la posición de la imagen */
+  z-index: 1; /* Asegura que la imagen esté delante de otros elementos si es necesario */
+}
+
+/* NOMBRE Y OCUPACION */
+.info_Personal .icon_info {
+  transition: all 0.5s ease; /* Agrega una transición para todos los cambios durante 0.3 segundos */
+}
+
+.info_Personal:hover .icon_info {
+  border-radius: 50%;
+  color: var(--color-blue);
+}
+
+.telefono:hover,
+.e-mail:hover,
+.e-mail2:hover,
+.Maps:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  font-size: 0.9rem;
+}
+
+.name {
+  padding-top: 0.8rem;
+}
+.name h3 {
+  font-size: x-large;
+}
+
+.name h6 {
+  font-size: medium;
+}
+/* iconos de las redes sociales */
+.iconos_redes {
+  display: flex; /* Usa flexbox */
+  flex-direction: row; /* Acomoda los elementos verticalmente */
+}
+
+.iconos_redes img {
+  max-width: 5rem;
+  max-height: 5rem;
+  cursor: pointer;
+}
+.iconos_redes img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.info_contact {
+  /* border: 1px solid #c2bebe; */
+  border-radius: 10px;
+  background-color: var(--color-gray);
+  padding-left: 5px;
+}
+
+.icon_info {
+  margin-top: 0.2rem;
+  width: 2.5rem; /* Establece un ancho máximo rgba(243, 243, 243, 0.856); */
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+
+.icon_info i {
+  font-size: 1.4rem;
+}
+
+.border-b {
+  border-bottom: 0.1rem solid #e0dede;
+}
+.Title_data {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.Maps {
+  color: inherit; /* Hereda el color del texto de su contenedor */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+/* Tamaño de letra de los datos */
+.Informacion {
+  font-size: 0.85rem;
+}
+
+.Extens {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Esto agrega puntos suspensivos (...) si el texto es demasiado largo */
+}
+
+.btn-down {
+  background-color: var(--color-gray-2);
+}
+
+.btn-down:hover, .btn-down:focus {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}

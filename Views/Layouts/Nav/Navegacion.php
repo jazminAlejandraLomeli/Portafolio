@@ -1,8 +1,8 @@
-<div>
+<div class="">
     <!-- Este es el contenido este si varia segun la vista -->
     <p class="text-center">Menú</p>
     <!-- Acomodo de los iconos -->
-    <div class="navegacion border">
+    <div class="navegacion border" style="height: auto;">
         <div class="icons">
             <a href="Home"> <i class="bi bi-person"></i>
                 <span>Home</span></a>
