@@ -18,7 +18,11 @@
   <?php
   require_once("Layouts/Nav/Button.php")
   ?>
-   
+
+  <?php
+  require_once("Layouts/Nav/ButtonMenu.php")
+  ?>
+
   <!-- Contenedor Principal -->
   <div class="container mt-2">
 
@@ -31,19 +35,22 @@
       </aside>
       <!-- Contenido de las vistas -->
       <main class="card-styles col-xl-6 col-md-6 col-sm-12">
-        <h3>Titulo de la vista </h3>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae ea enim temporibus minima eaque sit quibusdam quia }
-        <br><br>deleniti quas unde explicabo possimus non molestiae, veniam, debitis at commodi suscipit.
-        <br><br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi aliquam vel quaerat incidunt suscipit rerum culpa molestias quae autem itaque dolor deleniti, optio, harum ratione, atque neque ipsum nostrum tempora?
-        <br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum eveniet, dolores et iste omnis nam consequatur obcaecati, aperiam, quis eligendi temporibus quia cupiditate perspiciatis minima nulla inventore veritatis quisquam.
-        <br><br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam modi minima quia repudiandae amet illo incidunt? Ea voluptas laborum itaque consequatur. Distinctio corrupti earum labore harum, rerum perspiciatis quibusdam recusandae!
+        <h1 class="Titulo-1">Resumen </h1>
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-6 col-md-12 col-sm-12">
+            <h1 class="Sub-1">Sobre mi</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum cum nam veritatis incidunt sequi repudiandae at, ab dolorum <br><br>
+            impedit mollitia animi velit aspernatur praesentium. Dignissimos nesciunt delectus sit minima.
+          </div>
+          <div class="col-xl-6 col-md-12 col-sm-12">
+            <h1 class="Sub-1">Sobre mi</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum odio culpa doloribus nemo, architecto <br> <br> pariatur voluptas maiores quam dicta. Officiis nam obcaecati consequatur eligendi sint voluptatibus aut non vel.
+          </div>
+        </div>
       </main>
 
       <!-- Navegación en la pagina web  -->
-      <div class="card-style-nav  col-xl-2 col-md-2 col-sm-12 d-none d-md-block">
+      <div class="card-style-nav col-xl-2 col-md-2 col-sm-12 d-none d-md-block">
         <?php
         require_once("Layouts/Nav/Navegacion.php")
         ?>

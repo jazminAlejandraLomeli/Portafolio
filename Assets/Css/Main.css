@@ -15,7 +15,17 @@ body {
   display: flex;
   justify-content: center;
 }
- 
+
+.btn-Home i{
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+.btn-Home i:hover{
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  color: var(--color-gray-2);
+}
 
 /* General de las cards */
 .card-style-1,
@@ -34,9 +44,12 @@ body {
 .card-styles {
   margin-left: 3.1rem;
   padding: 1rem 2rem;
+      transition: width 0.5s ease;
+
 }
 /* Card de menu principal que siempre se debe de ver */
 .card-style-nav {
+ 
   position: fixed;
   top: 6rem; /* Ajusta la posición vertical según tus necesidades */
   right: 3.3rem; /* Fija el contenedor en el lado derecho */
@@ -61,28 +74,38 @@ body {
 .container {
   margin: 0;
   padding: 0;
-  /* Arriba | Derecha | Abajo | Izquierda 
-  margin: 15rem 0.6rem 15rem 0.6rem;*/
   margin: 15rem 0.5rem; /* Margen para pantallas grandes */
 }
 
-/* ///////////// DATOS DEL PERFIL   ///////// */
-
-.align-items-center {
-  align-items: center;
-}
 /* ///////// CONTENEDOR //////// */
-
 .main {
   /* Contenedores en la misma*/
   margin: 6rem 0.7rem; /* Margen para pantallas medianas y grandes */
+}
+
+.Oculta {
+    display: none !important;
+}
+
+.fadeInAnimation {
+    opacity: 0;
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Media Query */
 
 
 /* Para pantallas pequeñas Menor a 766px*/
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .navegacion {
     flex-direction: row;
   }
@@ -114,7 +137,7 @@ body {
 }
 
 
-@media (min-width: 769px) and (max-width: 835px) {
+@media (min-width: 766px) and (max-width: 835px) {
  .iconos_redes img {
     max-width: 1.5rem;
     max-height: 1.5rem;
