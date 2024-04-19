@@ -39,22 +39,27 @@ function copiarTexto(selector, Informacion) {
 function ClicbuttonLess() {
   // $(".Button-Less").click("off");
   $(".Button-Less").on("click", function () {
-    /* Ocultar el menu del lado derecho, va va crecer el contenedor del centro y aparecera el boton de home */ // ButtonHome;
+    /* Ocultar el menu del lado derecho, va crecer el contenedor del centro y aparecera el boton de home */ // ButtonHome;
     $(".card-style-nav").addClass("Oculta");
     /* Agrandar contenedor*/
-    $(".card-styles").removeClass("col-md-6").addClass("col-md-8");
-    $(".card-styles").removeClass("col-xl-6").addClass("col-xl-8");
+  
+    $(".card-styles").removeClass("col-md-7").addClass("col-md-8");
+    $(".card-styles").removeClass("col-xl-8").addClass("col-xl-9");
+  
+
     /*Mostrar boton Home*/
     $(".ButtonHome").fadeIn(1200).removeClass("d-none");
   });
 }
+
+
 /* Funcion para Mostrar el Menu de navegacion del lado derecho, ocultar boton flotante de HOME y encoger el contenedor principal */
 function ClicbuttonHome() {
   $(".btn-Home").on("click", function () {
     $(".card-style-nav").removeClass("Oculta").addClass("fadeInAnimation"); // Agregar la clase para fadeIn
     /* Encogemos el  contenedor*/
-    $(".card-styles").removeClass("col-md-8").addClass("col-md-6");
-    $(".card-styles").removeClass("col-xl-8").addClass("col-xl-6");
+    $(".card-styles").removeClass("col-md-8").addClass("col-md-7");
+    $(".card-styles").removeClass("col-xl-9").addClass("col-xl-8");
     /*Ocultamos boton Home*/
     $(".ButtonHome").fadeOut(900).addClass("d-none");
 

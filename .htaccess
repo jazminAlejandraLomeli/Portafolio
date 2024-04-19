@@ -3,9 +3,13 @@
 RewriteEngine On 
 RewriteBase /Portafolio/ 
 
-# Vista para los alumnos Talleres/Alumno
+# Vista Home 
 RewriteRule ^Home$ Views/Home.php [L]
-# Vista inicial para los usuarios (inicio sesion) Taller/Inicio
+# Vista para Skills
+RewriteRule ^skills$ Views/skills.php  [L]
+# Vista para proyectos
 RewriteRule ^Proyectos$ Views/Projects.php  [L]
+# Vista para Experiencia
+RewriteRule ^Experience$ Views/Projects.php  [L]
 
 

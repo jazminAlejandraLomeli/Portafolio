@@ -33,7 +33,7 @@
       <main class="card-styles col-xl-6 col-md-6 col-sm-12">
         <div class="row d-flex justify-content-start align-items-start pb-2">
           <div class="col-auto">
-            <h1 class="m-0">Proyectos</h1>
+            <h1 class="m-0">Experiencia</h1>
           </div>
           <div class="col text-start pt-2">
             <hr class="w-100" style="border: 0.15rem solid #096db9;">

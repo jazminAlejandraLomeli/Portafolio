@@ -7,9 +7,25 @@
   --color-white:  rgba(255, 255, 255, 0.856);
   --color-black: black;
   --color-blue:  #1e8de2;
-  --color-secundario: #6c757d;
+  --color-Pink:  #d188b9;
   --color-fondo: #f8f9fa;
+
 }
+
+
+.Sub-1{
+  font-size: x-large;
+}
+
+.Sub-2{
+  font-size: large;
+}
+
+
+.Sub-3{
+  font-size: large;
+}
+
 
 /* PALETA DE COLORES 
  #d9d5e8  

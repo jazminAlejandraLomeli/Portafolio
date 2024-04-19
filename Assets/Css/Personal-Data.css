@@ -9,24 +9,26 @@
 }
 
 .cont-img {
-  width: 10rem;
+ align-items: center;
+  width: 12rem;
 }
 
-.col img {
-  width: 2.3rem;
-  height: 2.3rem;
-}
-
+/* Imagen del perfil */ 
 .custom-img {
   border-radius: 8px;
-  width: 10rem; /* Establece el ancho deseado */
+  width: 12rem; /* Establece el ancho deseado */
   height: auto; /* Permite que la altura se ajuste automáticamente */
   display: block; /* Asegura que la imagen sea un elemento de bloque */
-  margin-top: -4.3rem; /* Mueve la imagen hacia arriba para que sobresalga del aside */
+  margin-top: -4.5rem; /* Mueve la imagen hacia arriba para que sobresalga del aside */
   position: relative; /* Permite ajustar la posición de la imagen */
   z-index: 1; /* Asegura que la imagen esté delante de otros elementos si es necesario */
 }
 
+/* Iconos */ 
+.col img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
 /* NOMBRE Y OCUPACION */
 .info_Personal .icon_info {
   transition: all 0.5s ease; /* Agrega una transición para todos los cambios durante 0.3 segundos */

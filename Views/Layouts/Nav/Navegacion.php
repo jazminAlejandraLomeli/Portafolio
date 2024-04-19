@@ -1,6 +1,6 @@
 <div class="">
     <!-- Este es el contenido este si varia segun la vista -->
-    <p class="text-center">Menú</p>
+    <p class="text-center pt-2 Sub-2">Menú</p>
     <!-- Acomodo de los iconos -->
     <div class="navegacion">
         <div class="icons">
@@ -10,7 +10,7 @@
         </div>
         <div class="icons">
             <div class="icon-cont Extens">
-                <a href=""> <i class="fa-solid fa-code"></i>
+                <a href="skills"> <i class="fa-solid fa-code"></i>
                     <span>Habilidades</span></a>
             </div>
         </div>
@@ -29,6 +29,8 @@
                 </a>
             </div>
         </div>
+
+
         <div class="icons">
             <div class="icon-cont Extens">
                 <a href="Proyectos"><i class="fas fa-address-book"></i>
@@ -37,12 +39,13 @@
             </div>
         </div>
         <div class="icons">
-            <div class="Button-Less">
-                <abbr title="Ocultar menú">
-                    <i class="fa-solid fa-angle-up"></i>
-                </abbr>
+          
+                <div class="Button-Less">
 
-            </div>
+                    <i class="fa-solid fa-angle-up"></i>
+
+                </div>
+            
         </div>
 
     </div>

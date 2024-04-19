@@ -7,8 +7,8 @@
   </div>
   <div class="name perfil mt-1">
     <div class="row col-12 text-center ">
-      <h3>Jazmin Lomelí Zermeño</h3>
-      <h6>Jr Full-Stack Developer</h6>
+      <h3 class="Sub-2">Jazmin Lomelí Zermeño</h3>
+      <h6 class="Sub-3">Jr Full-Stack Developer</h6>
       <div class="d-flex justify-content-center mt-3">
         <div class="col-12 col-md-12 col-sm-12">
           <p> Redes sociales </p>

@@ -16,12 +16,12 @@ body {
   justify-content: center;
 }
 
-.btn-Home i{
+.btn-Home i {
   font-size: 1.8rem;
   color: var(--color-white);
 }
 
-.btn-Home i:hover{
+.btn-Home i:hover {
   transform: scale(1.2);
   transition-duration: 0.3s;
   color: var(--color-gray-2);
@@ -38,18 +38,17 @@ body {
 
 /*Card de los datos personales */
 .card-style-1 {
-  max-width: auto;
+  margin-left: -4rem;
+  max-height: 44rem; /* Ajusta la altura automáticamente */
 }
 /* Card con el contenido */
 .card-styles {
-  margin-left: 3.1rem;
+  margin-left: 3.5rem;
   padding: 1rem 2rem;
-      transition: width 0.5s ease;
-
+  transition: width 0.5s ease;
 }
 /* Card de menu principal que siempre se debe de ver */
 .card-style-nav {
- 
   position: fixed;
   top: 6rem; /* Ajusta la posición vertical según tus necesidades */
   right: 3.3rem; /* Fija el contenedor en el lado derecho */
@@ -84,25 +83,28 @@ body {
 }
 
 .Oculta {
-    display: none !important;
+  display: none !important;
 }
 
+
+
+
 .fadeInAnimation {
-    opacity: 0;
-    animation: fadeIn ease 1s;
+  opacity: 0;
+  animation: fadeIn ease 1s;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/* Media Query */
 
+/* Media Query */
 
 /* Para pantallas pequeñas Menor a 766px*/
 @media (max-width: 765px) {
@@ -129,46 +131,70 @@ body {
   .card-style-nav {
     right: 3rem; /* Fija el contenedor en el lado derecho */
   }
+  .card-style-1 {
+   margin-left: 0.5rem; /* Fija el contenedor en el lado derecho */
+   }
   /* Vertical hacia abajo*/
   .card-styles {
-    margin-left: 0rem;
+    margin-left: 0.4rem;
   }
- 
 }
+
 
 
 @media (min-width: 766px) and (max-width: 835px) {
- .iconos_redes img {
+  .iconos_redes img {
     max-width: 1.5rem;
     max-height: 1.5rem;
   }
+
+  .icon-cont a i {
+  font-size: 1.2rem;
+}
+  .cont-img{
+    width: 9rem;
+  }
+
+  .custom-img {
+  width: 9em;  
+  height: auto; 
+  }
+  .card-style-1 {
+   margin-left: 0.5rem; /* Fija el contenedor en el lado derecho */
+   }
   /* Card con el contenido */
   .card-styles {
     margin-left: 1.9rem;
-    
   }
-   .card-style-nav {
+  .card-style-nav {
     right: 1.5rem; /* Fija el contenedor en el lado derecho */
   }
-
 }
 
+
+.Left-card{
+   margin-left: -100rem; /* Fija el contenedor en el lado derecho */
+   }
+
+
+
+
+
+
+
 @media (min-width: 836px) and (max-width: 900px) {
- .iconos_redes img {
+  .iconos_redes img {
     max-width: 1.8rem;
     max-height: 1.8rem;
   }
   /* Card con el contenido */
   .card-styles {
     margin-left: 2.5rem;
-    
   }
-   .card-style-nav {
+  .card-style-nav {
     right: 1.5rem; /* Fija el contenedor en el lado derecho */
   }
-
 }
-
 
 @media (min-width: 901px) and (max-width: 994px) {
   .iconos_redes img {
@@ -179,24 +205,19 @@ body {
   /* Card con el contenido */
   .card-styles {
     margin-left: 2.7rem;
-    
   }
-   .card-style-nav {
+  .card-style-nav {
     right: 1.5rem; /* Fija el contenedor en el lado derecho */
   }
-
 }
 
-/* Pantalla grande */ 
+/* Pantalla grande */
 @media (min-width: 994px) and (max-width: 1035px) {
-  
- /* Card con el contenido */
+  /* Card con el contenido */
   .card-styles {
     margin-left: 2.5rem;
-    
   }
-   .card-style-nav {
+  .card-style-nav {
     right: 0rem; /* Fija el contenedor en el lado derecho */
   }
 }
-
