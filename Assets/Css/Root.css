@@ -12,6 +12,10 @@
 
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
 
 .Sub-1{
   font-size: x-large;
@@ -26,15 +30,24 @@
   font-size: large;
 }
 
+ body {
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+}
 
-/* PALETA DE COLORES 
- #d9d5e8  
- #1e8de2  
- #c87eac  
- #7fadec  
- #ce9cc1  
- #a4bbec  
- #d2b0d0  
- #b8c4ea 
+.sidebar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
 
-*/
+.content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 1F0px;
+}
+
+.nav-buttons .btn {
+  width: 100%;
+  margin-bottom: 10px;
+}

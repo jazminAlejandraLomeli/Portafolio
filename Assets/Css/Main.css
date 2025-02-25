@@ -38,12 +38,12 @@ body {
 
 /*Card de los datos personales */
 .card-style-1 {
-  margin-left: -4rem;
+  margin-left: -3.5rem;
   max-height: 44rem; /* Ajusta la altura automáticamente */
 }
 /* Card con el contenido */
 .card-styles {
-  margin-left: 3.5rem;
+  margin-left: 3.3em;
   padding: 1rem 2rem;
   transition: width 0.5s ease;
 }
@@ -51,11 +51,8 @@ body {
 .card-style-nav {
   position: fixed;
   top: 6rem; /* Ajusta la posición vertical según tus necesidades */
-  right: 3.3rem; /* Fija el contenedor en el lado derecho */
-  max-height: calc(
-    100vh - 4rem
-  ); /* Limita la altura para evitar que se extienda más allá del alto de la ventana */
-  overflow-y: auto; /* Añade desplazamiento vertical si el contenido es demasiado largo */
+  right: 3.1rem; /* Fija el contenedor en el lado derecho */
+  max-width: 110px;
 }
 
 /* BOTON NAVBAR*/
@@ -86,8 +83,33 @@ body {
   display: none !important;
 }
 
+/* Tooltip para el hover en ciertos elementos  */
+.tooltip-container {
+  position: relative; /*relative: los elementos se posicionan de forma relativa a su posición normal.*/
+  display: inline-block;
+}
 
+.tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: var(--color-gray-2);
+  color: #080808;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 115%; /* Posiciona el tooltip bajo del elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 
 .fadeInAnimation {
   opacity: 0;
@@ -102,7 +124,6 @@ body {
     opacity: 1;
   }
 }
-
 
 /* Media Query */
 
@@ -129,18 +150,16 @@ body {
     font-size: 0.95rem;
   }
   .card-style-nav {
-    right: 3rem; /* Fija el contenedor en el lado derecho */
+    right: 2rem; /* Fija el contenedor en el lado derecho */
   }
   .card-style-1 {
-   margin-left: 0.5rem; /* Fija el contenedor en el lado derecho */
-   }
+    margin-left: 0.3rem; /* Fija el contenedor en el lado derecho */
+  }
   /* Vertical hacia abajo*/
   .card-styles {
     margin-left: 0.4rem;
   }
 }
-
-
 
 @media (min-width: 766px) and (max-width: 835px) {
   .iconos_redes img {
@@ -148,45 +167,41 @@ body {
     max-height: 1.5rem;
   }
 
-  .icon-cont a i {
-  font-size: 1.2rem;
-}
-  .cont-img{
+  .icon-cont svg {
+    transition: fill 0.3s;
+  }
+
+  .cont-img {
     width: 9rem;
   }
 
   .custom-img {
-  width: 9em;  
-  height: auto; 
+    width: 9em;
+    height: auto;
   }
   .card-style-1 {
-   margin-left: 0.5rem; /* Fija el contenedor en el lado derecho */
-   }
+    margin-left: 0.2rem; /* Fija el contenedor en el lado derecho */
+  }
   /* Card con el contenido */
   .card-styles {
     margin-left: 1.9rem;
   }
   .card-style-nav {
-    right: 1.5rem; /* Fija el contenedor en el lado derecho */
+    /* right: 1.5rem;  Fija el contenedor en el lado derecho */
+    display: none !important;
   }
 }
 
-
-.Left-card{
-   margin-left: -100rem; /* Fija el contenedor en el lado derecho */
-   }
-
-
-
-
-
-
+.Left-card {
+  margin-left: -100rem; /* Fija el contenedor en el lado derecho */
+}
 
 @media (min-width: 836px) and (max-width: 900px) {
   .iconos_redes img {
     max-width: 1.8rem;
     max-height: 1.8rem;
   }
+
   /* Card con el contenido */
   .card-styles {
     margin-left: 2.5rem;
@@ -202,9 +217,14 @@ body {
     max-height: 2rem;
     margin: 1px;
   }
+
+  .card-style-1 {
+    left: 0px !important; /* Fija el contenedor en el lado derecho */
+  }
+
   /* Card con el contenido */
   .card-styles {
-    margin-left: 2.7rem;
+    margin-left: 2rem;
   }
   .card-style-nav {
     right: 1.5rem; /* Fija el contenedor en el lado derecho */

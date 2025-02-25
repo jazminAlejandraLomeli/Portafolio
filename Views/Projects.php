@@ -30,7 +30,7 @@
         ?>
       </aside>
       <!-- Contenido de las vistas -->
-      <main class="card-styles col-xl-6 col-md-6 col-sm-12">
+      <main class="card-styles col-xl-8 col-md-7 col-sm-12 shadow">
         <div class="row d-flex justify-content-start align-items-start pb-2">
           <div class="col-auto">
             <h1 class="m-0">Proyectos</h1>
@@ -49,8 +49,8 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam modi minima quia repudiandae amet illo incidunt? Ea voluptas laborum itaque consequatur. Distinctio corrupti earum labore harum, rerum perspiciatis quibusdam recusandae!
       </main>
 
-      <!-- Navegación en la pagina web  -->
-      <div class="card-style-nav  col-xl-2 col-md-2 col-sm-12 d-none d-md-block">
+      <!-- Navegación en la pagi na web  -->
+      <div class="card-style-nav shadow d-sm-none d-none d-md-block">
         <?php
         require_once("Layouts/Nav/Navegacion.php")
         ?>

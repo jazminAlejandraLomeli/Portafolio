@@ -6,6 +6,7 @@ $(document).ready(function () {
   copiarTexto(".e-mail", "¡E-mail copiado!");
   copiarTexto(".e-mail2", "¡E-mail copiado!");
 });
+
 /* Funcion para dar clic y copiar la informacion */
 function copiarTexto(selector, Informacion) {
   $(selector).click(function () {
@@ -37,20 +38,22 @@ function copiarTexto(selector, Informacion) {
 }
 /* Funcion para ocultar la barra de navegacion del del lado derecho, mostrar el boton flotante de HOME y agrandar el contenedor principal */
 function ClicbuttonLess() {
-  // $(".Button-Less").click("off");
   $(".Button-Less").on("click", function () {
-    /* Ocultar el menu del lado derecho, va crecer el contenedor del centro y aparecera el boton de home */ // ButtonHome;
-    $(".card-style-nav").addClass("Oculta");
-    /* Agrandar contenedor*/
-  
-    $(".card-styles").removeClass("col-md-7").addClass("col-md-8");
-    $(".card-styles").removeClass("col-xl-8").addClass("col-xl-9");
-  
+    console.log("Mostrar");
 
-    /*Mostrar boton Home*/
-    $(".ButtonHome").fadeIn(1200).removeClass("d-none");
+    // Ocultar el menú lateral
+    $(".card-style-nav").addClass("Oculta");
+
+    // Ajustar tamaños de contenedores
+    $(".card-styles")
+      .removeClass("col-md-7 col-xl-8")
+      .addClass("col-md-8 col-xl-9");
+
+    // Mostrar el botón de Home correctamente
+    $(".ButtonHome").removeClass("d-none").hide().fadeIn(1000);
   });
 }
+
 
 
 /* Funcion para Mostrar el Menu de navegacion del lado derecho, ocultar boton flotante de HOME y encoger el contenedor principal */

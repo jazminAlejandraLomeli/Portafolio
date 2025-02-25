@@ -15,15 +15,5 @@
             </ul>
         </div>
 
-        <!-- <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Botón dropdown
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Acción</a></li>
-              <li><a class="dropdown-item" href="#">Otra acción</a></li>
-              <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-            </ul>
-          </div> -->
     </div>
 </div>

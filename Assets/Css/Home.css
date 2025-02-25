@@ -1,0 +1,23 @@
+ul.List-sec {
+  padding-left: 10px;
+  list-style: none; /* Quitar el estilo de lista predeterminado */
+}
+
+ul.List-sec li {
+  margin: 2px 0;
+  padding-left: 20px; /* Espacio para el icono */
+  position: relative;
+  
+}
+
+ul.List-sec li::before {
+  color: #3f72af;
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+}
+
+ul.List-sec li.disc::before {
+content: '\25CF'; /* Filled Circle */
+}
+
