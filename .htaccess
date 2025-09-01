@@ -6,11 +6,11 @@ RewriteBase /Portafolio/
 # Vista Home 
 RewriteRule ^Home$ Views/Home.php [L]
 # Vista para Skills
-RewriteRule ^habilidades$ Views/skills.php  [L]
-# Vista para proyectos
-RewriteRule ^Proyectos$ Views/Projects.php  [L]
-# Vista para Experiencia
-RewriteRule ^Experience$ Views/Projects.php  [L]
-RewriteRule ^prueba$ Views/prueba.php  [L]
+#RewriteRule ^habilidades$ Views/skills.php  [L]
+## Vista para proyectos
+#RewriteRule ^Proyectos$ Views/Projects.php  [L]
+## Vista para Experiencia
+#RewriteRule ^Experience$ Views/Projects.php  [L]
+#RewriteRule ^Hola$ Views/index.php [L]
 
 

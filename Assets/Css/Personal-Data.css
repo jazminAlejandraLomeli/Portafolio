@@ -1,132 +1,65 @@
-
-.principal-perfil{
-    height: auto;
-}
-/* Imagen del perfin */
-.perfil {
-  display: flex;
-  justify-content: center;
-}
-
-.cont-img {
- align-items: center;
-  width: 12rem;
+ 
+.profile-image-container {
+  position: absolute;
+  top: -85px; /* Hace que sobresalga hacia arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
-/* Imagen del perfil */ 
-.custom-img {
+.profile-image {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%; /* Hace la imagen redonda */
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+a.maps {
+  color: inherit;       /* hereda el color del contenedor/padre */
+  text-decoration: none; /* quita el subrayado */
+}
+
+.icono-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ 
+/* Transiciones y efectos generales */
+.icono-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover normal */
+.icono-hover:hover {
+  transform: scale(1.2);
+filter: drop-shadow(0 0 0.75rem rgb(206, 204, 205));
   border-radius: 8px;
-  width: 12rem; /* Establece el ancho deseado */
-  height: auto; /* Permite que la altura se ajuste automáticamente */
-  display: block; /* Asegura que la imagen sea un elemento de bloque */
-  margin-top: -4.5rem; /* Mueve la imagen hacia arriba para que sobresalga del aside */
-  position: relative; /* Permite ajustar la posición de la imagen */
-  z-index: 1; /* Asegura que la imagen esté delante de otros elementos si es necesario */
 }
 
-/* Iconos */ 
-.col img {
-  width: 2.3rem;
-  height: 2.3rem;
-}
-/* NOMBRE Y OCUPACION */
-.info_Personal .icon_info {
-  transition: all 0.5s ease; /* Agrega una transición para todos los cambios durante 0.3 segundos */
+/* Efecto blur en los íconos NO activos cuando alguno está en hover */
+.lista-redes:hover .icono-hover:not(:hover) {
+  filter: blur(1.5px);
+  opacity: 0.5; /* Opcional: desvanecer un poco */
 }
 
-.info_Personal:hover .icon_info {
-  border-radius: 50%;
-  color: var(--color-blue);
+.cont-texto {
+  display: inline-block;     /* opcional si quieres que respete el ancho del padre */
+  max-width: 100%;           /* evita que se salga del padre */
+  overflow-wrap: break-word; /* permite cortar palabras largas */
+  word-break: break-all;     /* fuerza el quiebre si es necesario */
+  white-space: normal;       /* evita que todo quede en una sola línea */
 }
 
-.telefono:hover,
-.e-mail:hover,
-.e-mail2:hover,
-.Maps:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  transition-duration: 0.3s;
-  font-size: 0.9rem;
-}
 
-.name {
-  padding-top: 0.8rem;
+ 
+/* 
+.iconos_redes{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
-.name h3 {
-  font-size: x-large;
-}
-
-.name h6 {
-  font-size: medium;
-}
-/* iconos de las redes sociales */
-.iconos_redes {
-  display: flex; /* Usa flexbox */
-  flex-direction: row; /* Acomoda los elementos verticalmente */
-}
-
-.iconos_redes img {
-  max-width: 5rem;
-  max-height: 5rem;
-  cursor: pointer;
-}
-.iconos_redes img:hover {
-  transform: scale(1.2);
-  transition-duration: 0.3s;
-}
-
-.info_contact {
-  /* border: 1px solid #c2bebe; */
-  border-radius: 10px;
-  background-color: var(--color-gray);
-  padding-left: 5px;
-}
-
-.icon_info {
-  margin-top: 0.2rem;
-  width: 2.5rem; /* Establece un ancho máximo rgba(243, 243, 243, 0.856); */
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-white);
-  border-radius: 10px;
-}
-
-.icon_info i {
-  font-size: 1.4rem;
-}
-
-.border-b {
-  border-bottom: 0.1rem solid #e0dede;
-}
-.Title_data {
-  font-size: 1rem;
-  font-style: italic;
-}
-
-.Maps {
-  color: inherit; /* Hereda el color del texto de su contenedor */
-  text-decoration: none; /* Elimina el subrayado predeterminado */
-}
-
-/* Tamaño de letra de los datos */
-.Informacion {
-  font-size: 0.85rem;
-}
-
-.Extens {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; /* Esto agrega puntos suspensivos (...) si el texto es demasiado largo */
-}
-
-.btn-down {
-  background-color: var(--color-gray-2);
-}
-
-.btn-down:hover, .btn-down:focus {
-  background-color: var(--color-blue);
-  color: var(--color-white);
-}
+  */

@@ -1,243 +1,39 @@
 @import url("Root.css");
-/* Contenedor del lado izquierdo*/
-@import url("Personal-Data.css");
-/* Contenedor del lado Derecho*/
-@import url("Navegacion.css");
+@import url("Cards.css");
+@import url("Personal-data.css");
 
-body {
-  background-image: url("/Portafolio/Assets/img/Degradado_3.avif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; /* Centra la imagen horizontal y verticalmente */
-  background-attachment: fixed; /* Fija la imagen en su posición al hacer scroll */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
 
-.btn-Home i {
-  font-size: 1.8rem;
-  color: var(--color-white);
-}
 
-.btn-Home i:hover {
-  transform: scale(1.2);
-  transition-duration: 0.3s;
-  color: var(--color-gray-2);
-}
 
-/* General de las cards */
-.card-style-1,
-.card-style-nav,
-.card-styles {
-  background-color: var(--color-white);
-  border-radius: 10px;
-  margin-bottom: 1.5rem; /* Margen inferior reducido */
-}
 
-/*Card de los datos personales */
-.card-style-1 {
-  margin-left: -3.5rem;
-  max-height: 44rem; /* Ajusta la altura automáticamente */
-}
-/* Card con el contenido */
-.card-styles {
-  margin-left: 3.3em;
-  padding: 1rem 2rem;
-  transition: width 0.5s ease;
-}
-/* Card de menu principal que siempre se debe de ver */
-.card-style-nav {
-  position: fixed;
-  top: 6rem; /* Ajusta la posición vertical según tus necesidades */
-  right: 3.1rem; /* Fija el contenedor en el lado derecho */
-  max-width: 110px;
-}
-
-/* BOTON NAVBAR*/
-.boton_nav i {
-  color: var(--color-black);
-  font-size: 1.7rem;
-}
-.boton_nav i:hover {
-  transform: scale(1.2);
-  transition-duration: 0.3s;
-  color: var(--color-blue);
-}
-
-/* Contenedor Principal CENTRO */
-.container {
-  margin: 0;
-  padding: 0;
-  margin: 15rem 0.5rem; /* Margen para pantallas grandes */
-}
-
-/* ///////// CONTENEDOR //////// */
-.main {
-  /* Contenedores en la misma*/
-  margin: 6rem 0.7rem; /* Margen para pantallas medianas y grandes */
-}
-
-.Oculta {
-  display: none !important;
-}
-
-/* Tooltip para el hover en ciertos elementos  */
-.tooltip-container {
-  position: relative; /*relative: los elementos se posicionan de forma relativa a su posición normal.*/
-  display: inline-block;
-}
-
-.tooltip-text {
-  visibility: hidden;
-  width: 150px;
-  background-color: var(--color-gray-2);
-  color: #080808;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  top: 115%; /* Posiciona el tooltip bajo del elemento */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.tooltip-container:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-
-.fadeInAnimation {
-  opacity: 0;
-  animation: fadeIn ease 1s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) {
+  .profile-image-container {
+    top: -80px;
   }
-  100% {
-    opacity: 1;
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
   }
 }
 
-/* Media Query */
-
-/* Para pantallas pequeñas Menor a 766px*/
-@media (max-width: 765px) {
-  .navegacion {
-    flex-direction: row;
-  }
-  .icons {
-    margin-bottom: 0;
-    margin-right: 0.5rem;
-  }
-  .icon_info {
-    margin-top: 0.2rem;
-    max-width: 5rem; /* Establece un ancho máximo rgba(243, 243, 243, 0.856); */
-    max-height: 2.6rem;
-  }
-  /* Tamanño de los iconos */
-  .iconos_redes img {
-    min-width: 2.5rem;
-    min-height: 2.5rem;
-  }
-  .Informacion {
-    font-size: 0.95rem;
-  }
-  .card-style-nav {
-    right: 2rem; /* Fija el contenedor en el lado derecho */
-  }
-  .card-style-1 {
-    margin-left: 0.3rem; /* Fija el contenedor en el lado derecho */
-  }
-  /* Vertical hacia abajo*/
-  .card-styles {
-    margin-left: 0.4rem;
-  }
+/* Small devices (landscape phones) */
+@media (min-width: 576px) {
 }
 
-@media (min-width: 766px) and (max-width: 835px) {
-  .iconos_redes img {
-    max-width: 1.5rem;
-    max-height: 1.5rem;
-  }
-
-  .icon-cont svg {
-    transition: fill 0.3s;
-  }
-
-  .cont-img {
-    width: 9rem;
-  }
-
-  .custom-img {
-    width: 9em;
-    height: auto;
-  }
-  .card-style-1 {
-    margin-left: 0.2rem; /* Fija el contenedor en el lado derecho */
-  }
-  /* Card con el contenido */
-  .card-styles {
-    margin-left: 1.9rem;
-  }
-  .card-style-nav {
-    /* right: 1.5rem;  Fija el contenedor en el lado derecho */
-    display: none !important;
-  }
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
 }
 
-.Left-card {
-  margin-left: -100rem; /* Fija el contenedor en el lado derecho */
+/* Large devices (desktops) */
+@media (min-width: 992px) {
 }
 
-@media (min-width: 836px) and (max-width: 900px) {
-  .iconos_redes img {
-    max-width: 1.8rem;
-    max-height: 1.8rem;
-  }
-
-  /* Card con el contenido */
-  .card-styles {
-    margin-left: 2.5rem;
-  }
-  .card-style-nav {
-    right: 1.5rem; /* Fija el contenedor en el lado derecho */
-  }
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
 }
 
-@media (min-width: 901px) and (max-width: 994px) {
-  .iconos_redes img {
-    max-width: 2rem;
-    max-height: 2rem;
-    margin: 1px;
-  }
-
-  .card-style-1 {
-    left: 0px !important; /* Fija el contenedor en el lado derecho */
-  }
-
-  /* Card con el contenido */
-  .card-styles {
-    margin-left: 2rem;
-  }
-  .card-style-nav {
-    right: 1.5rem; /* Fija el contenedor en el lado derecho */
-  }
-}
-
-/* Pantalla grande */
-@media (min-width: 994px) and (max-width: 1035px) {
-  /* Card con el contenido */
-  .card-styles {
-    margin-left: 2.5rem;
-  }
-  .card-style-nav {
-    right: 0rem; /* Fija el contenedor en el lado derecho */
-  }
+/* Extra extra large devices */
+@media (min-width: 1400px) {
 }

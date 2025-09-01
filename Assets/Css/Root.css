@@ -12,42 +12,15 @@
 
 }
 
-*{
-  margin: 0;
-  padding: 0;
-}
-
-.Sub-1{
-  font-size: x-large;
-}
-
-.Sub-2{
-  font-size: large;
-}
-
-
-.Sub-3{
-  font-size: large;
-}
-
- body {
-  background: linear-gradient(to right, #dfe9f3, #ffffff);
-}
-
-.sidebar {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 1F0px;
-}
-
-.nav-buttons .btn {
-  width: 100%;
-  margin-bottom: 10px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 5px;
+  margin-top: 25px;
+  padding: 5px;
+  padding-top: 25px;
+  background-image: url("/Portafolio/Assets/Img/Degradado_3.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
