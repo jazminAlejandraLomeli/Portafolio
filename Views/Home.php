@@ -18,35 +18,41 @@
 </head>
 
 <body>
-    <!-- Opción 1: Usando Bootstrap Grid System -->
-    <div class="container-fluid">
-        <div class="row g-3">
-            <!-- Personal data container -->
+
+    <div class="layout">
+        <aside class="sidebar">
             <?php
             require_once("Views/Layouts/Personal-data.php")
             ?>
 
-            <div class="col-12 col-md-8 col-xl-8">
-                <!-- Navigation container -->
-                <?php
-                require_once("Views/Layouts/Navigation.php")
-                ?>
+        </aside>
+
+        <main class="contenido">
+            <?php
+            require_once("Views/Layouts/Navigation.php")
+            ?>
 
 
-                <div class="card_style border p-3 mt-2">
-                    Lorewm ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                    Lorewm ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                    Lorewm ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                    Lorewm ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                    Lorewm ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                    Lorewm ipsum, dolo'r sit amet consectetur adipisicing elit. Quisquam, quod.
-                    Lorewm ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                </div>
-
-
+            <div class="card_style border p-3 main-cont">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas asperiores consectetur cupiditate consequuntur quis quasi! Similique, corporis consequuntur, est eius amet delectus nostrum magni labore corrupti esse officia eligendi?
             </div>
-        </div>
+
+        </main>
     </div>
+
 </body>
 
 </html>

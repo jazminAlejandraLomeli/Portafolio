@@ -1,10 +1,12 @@
+@import url('Root.css');
+
 .card-content {
   text-align: center;
   padding-top: 50px; /* Espacio para la imagen */
 }
 
 .card_style {
-  background-color: #fff;
+  background-color: var(--color-card);
   border: 1px solid #ddd;
       margin-top: 60px; /* Espacio para que la imagen sobresalga */
   border-radius: 15px;

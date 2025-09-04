@@ -1,8 +1,58 @@
 @import url("Root.css");
 @import url("Cards.css");
 @import url("Personal-data.css");
+@import url("navigation.css");
 
+@import url("Buttons.css");
 
+body {
+  margin: 10px;
+  padding: 10px;
+}
+
+.layout {
+  display: flex;
+}
+
+/* Sidebar fijo en escritorio */
+.sidebar {
+  margin-top: 30px;
+  padding: 10px;
+  width: 300px;
+  height: 100vh;       /* toda la pantalla */
+  position: fixed;     /* no se mueve */
+  top: 0;
+  left: 2;
+ }
+
+/* Contenido en escritorio */
+.contenido {
+  flex: 1;
+  margin-left: 300px;  /* deja espacio al sidebar */
+  padding: 10px;
+}
+.main-cont{
+    margin-top: 35px;
+
+}
+
+/* 📱 En móviles el sidebar pasa arriba y el contenido abajo */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; /* columnas apiladas */
+  }
+
+  .sidebar {
+    position: relative; /* ya no fijo */
+    width: 100%;        /* ocupa todo el ancho */
+    height: auto;       /* se adapta al contenido */
+ 
+  }
+
+  .contenido {
+    margin-left: 0;     /* sin espacio lateral */
+  }
+}
 
 
 
@@ -17,23 +67,4 @@
     height: 150px;
   }
 }
-
-/* Small devices (landscape phones) */
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets) */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops) */
-@media (min-width: 1200px) {
-}
-
-/* Extra extra large devices */
-@media (min-width: 1400px) {
-}
+ 

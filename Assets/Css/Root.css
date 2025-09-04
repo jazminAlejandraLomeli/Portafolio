@@ -7,17 +7,19 @@
   --color-white:  rgba(255, 255, 255, 0.856);
   --color-black: black;
   --color-blue:  #1e8de2;
+  --color-blue-2:  #0085E2;
   --color-Pink:  #d188b9;
   --color-fondo: #f8f9fa;
-
+  --color-card: #fff;
+/* 1AAB8A */
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 5px;
-  margin-top: 25px;
+  /* margin-top: 15px; */
   padding: 5px;
-  padding-top: 25px;
+  /* padding-top: 10px; */
   background-image: url("/Portafolio/Assets/Img/Degradado_3.avif");
   background-size: cover;
   background-repeat: no-repeat;
