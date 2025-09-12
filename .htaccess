@@ -5,6 +5,13 @@ RewriteBase /Portafolio/
 
 # Vista Home 
 RewriteRule ^Home$ Views/Home.php [L]
+RewriteRule ^About$ Views/About.php [L]
+RewriteRule ^a$ Views/a.php [L]
+RewriteRule ^b$ Views/b.php [L]
+RewriteRule ^c$ Views/c.php [L]
+
+
+
 # Vista para Skills
 #RewriteRule ^habilidades$ Views/skills.php  [L]
 ## Vista para proyectos

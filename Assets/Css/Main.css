@@ -19,21 +19,20 @@ body {
   margin-top: 30px;
   padding: 10px;
   width: 300px;
-  height: 100vh;       /* toda la pantalla */
-  position: fixed;     /* no se mueve */
+  height: 100vh; /* toda la pantalla */
+  position: fixed; /* no se mueve */
   top: 0;
   left: 2;
- }
+}
 
 /* Contenido en escritorio */
 .contenido {
   flex: 1;
-  margin-left: 300px;  /* deja espacio al sidebar */
+  margin-left: 300px; /* deja espacio al sidebar */
   padding: 10px;
 }
-.main-cont{
-    margin-top: 35px;
-
+.main-cont {
+  margin-top: 35px;
 }
 
 /* 📱 En móviles el sidebar pasa arriba y el contenido abajo */
@@ -44,17 +43,71 @@ body {
 
   .sidebar {
     position: relative; /* ya no fijo */
-    width: 100%;        /* ocupa todo el ancho */
-    height: auto;       /* se adapta al contenido */
- 
+    width: 100%; /* ocupa todo el ancho */
+    height: auto; /* se adapta al contenido */
   }
 
   .contenido {
-    margin-left: 0;     /* sin espacio lateral */
+    margin-left: 0; /* sin espacio lateral */
+  }
+}
+
+.hr-chingon {
+  margin-top: 0px;
+  border: none; /* quitamos el borde por defecto */
+  height: 4px; /* altura del HR */
+  background: linear-gradient(
+    90deg,
+    #f00993,
+    #8f8e8e,
+    #095e9b
+  ); /* gradiente de colores */
+  border-radius: 8px; /* esquinas redondeadas */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* sombra sutil */
+  position: relative;
+  overflow: hidden;
+}
+
+.hr-chingon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
   }
 }
 
 
+/* Titulo principal */
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* font-family: "Muli", sans-serif; */
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 841px) {
+  .border-end > svg {
+    display: none;
+  }
+
+  .iconos_redes > a > svg {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 /* Extra small devices (phones) */
 @media (max-width: 575.98px) {
@@ -62,9 +115,25 @@ body {
     top: -80px;
   }
 
+  .phrase{
+    font-size: 1.1rem;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
   .profile-image {
     width: 150px;
     height: 150px;
   }
+
+  .icon {
+    width: 40px !important;
+    height: 40px;
+  }
+  .sm-text-justify{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+  }
 }
- 

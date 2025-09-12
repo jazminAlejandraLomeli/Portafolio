@@ -21,7 +21,7 @@ a.maps {
 }
 
 .email {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .icono-hover {
@@ -47,57 +47,64 @@ a.maps {
 }
 
 .cont-texto {
-   display: inline-block;   /* o block, depende de tu layout */
-  max-width: auto;        /* ancho máximo (ajústalo a lo que necesites) */
-  white-space: nowrap;     /* no permite saltar de línea */
-  overflow: hidden;        /* oculta el sobrante */
+  display: inline-block; /* o block, depende de tu layout */
+  max-width: auto; /* ancho máximo (ajústalo a lo que necesites) */
+  white-space: nowrap; /* no permite saltar de línea */
+  overflow: hidden; /* oculta el sobrante */
   text-overflow: ellipsis; /* agrega "..." al final */
 }
 
-
-.hr-chingon {
-  border: none; /* quitamos el borde por defecto */
-  height: 4px; /* altura del HR */
-  background: linear-gradient(
-    90deg,
-    #ff6ec4,
-    #7873f5,
-    #4ade80
-  ); /* gradiente de colores */
-  border-radius: 8px; /* esquinas redondeadas */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* sombra sutil */
-  position: relative;
-  overflow: hidden;
+.phrase {
+  font-size: 0.85rem;
+  font-weight: 400;
+  /* font-family: "Muli", sans-serif; */
 }
 
-.hr-chingon::before {
+.modern-title h1 {
+
+  color: #2c3e50;
+  position: relative;
+  display: inline-block;
+}
+
+.modern-title h1 span {
+  /* color: #16a085; */
+  color: var(--color-Pink);
+  position: relative;
+}
+
+.modern-title h1 span::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: -50%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: skewX(-20deg);
-  animation: shine 2s infinite;
+  width: 100%;
+  height: 4px;
+  /* background: linear-gradient(90deg, #16a085, #1abc9c); */
+  background: linear-gradient(90deg, #f00993, #8f8e8e, #095e9b);
+  bottom: -9px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
 }
 
-@keyframes shine {
+.modern-title h1 span:hover::after {
+  transform: scaleX(1);
+}
+
+/* Efecto de entrada */
+.modern-title h1 {
+  animation: fadeInDown 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInDown {
   0% {
-    left: -50%;
+    opacity: 0;
+    transform: translateY(-20px);
   }
+
   100% {
-    left: 100%;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 841px) {
-  .border-end > svg {
-    display: none;
-  }
-
-  .iconos_redes > a > svg {
-    width: 30px;
-    height: 30px;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
