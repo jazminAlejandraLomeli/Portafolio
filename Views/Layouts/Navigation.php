@@ -7,6 +7,7 @@
                  </svg>
                  <span>Inicio</span>
              </a>
+            
          </li>
          <li class="menu">
              <a href="/About" class="text-decoration-none d-flex flex-column align-items-center">
