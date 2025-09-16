@@ -1,11 +1,20 @@
+RewriteEngine On
+RewriteBase /Portafolio/
 
-# Mostrar URL de manera amigable 
-RewriteEngine On 
-RewriteBase /Portafolio/ 
+# Si la URL está vacía, servir Views/Home.php
+RewriteRule ^$ Views/Home.php [L]
 
-# Vista Home 
+# Vista Home
 RewriteRule ^Home$ Views/Home.php [L]
+
+# Vista Experience
+RewriteRule ^Experience$ Views/Experience.php [L]
+
+# Vista About
 RewriteRule ^About$ Views/About.php [L]
+
+
+
 RewriteRule ^a$ Views/a.php [L]
 RewriteRule ^b$ Views/b.php [L]
 RewriteRule ^c$ Views/c.php [L]

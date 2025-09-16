@@ -1,0 +1,21 @@
+
+.btn-details{
+    color: black;
+}
+
+.btn-details svg {
+    transition: all 0.3s ease; /* Suaviza la animación */
+    color: var(--color-Pink-2); /* Color base */
+}
+
+.btn-details:hover svg {
+    transform: scale(1.2); /* Agranda el icono */
+    color: var(--color-Pink);       /* Cambia el color al hover */
+    stroke: currentColor;  /* Asegura que los trazos del SVG cambien */
+}
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem; /* espacio entre badges */
+}

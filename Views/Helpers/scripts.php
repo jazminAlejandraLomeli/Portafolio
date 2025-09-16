@@ -4,3 +4,12 @@
 <link rel="stylesheet" href="/Portafolio/Assets/Css/Main.css" />
 <link rel="stylesheet" href="/Portafolio/Assets/Css/Normalice.css" />
 <link rel="stylesheet" href="/Portafolio/Assets/Css/Root.css" />
+
+<?php
+require_once("../Assets/Config/Get-url.php");
+?>
+
+<?php
+$currentPage = getURL();
+echo $currentPage
+?>

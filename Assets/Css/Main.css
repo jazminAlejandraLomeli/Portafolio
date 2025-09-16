@@ -7,10 +7,11 @@
 
 body {
   margin: 10px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .layout {
+  margin-top: 0;
   display: flex;
 }
 
@@ -28,11 +29,12 @@ body {
 /* Contenido en escritorio */
 .contenido {
   flex: 1;
-  margin-left: 300px; /* deja espacio al sidebar */
-  padding: 10px;
+  margin-left: 300px;  
+  /* padding: 10px; */
 }
+
 .main-cont {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 /* 📱 En móviles el sidebar pasa arriba y el contenido abajo */
@@ -97,6 +99,11 @@ body {
   /* font-family: "Muli", sans-serif; */
 }
 
+.title span{
+  font-size: 1.7rem;
+  color: var(--color-blue-2);
+   font-weight: 400;
+}
 
 @media screen and (min-width: 769px) and (max-width: 841px) {
   .border-end > svg {
@@ -137,3 +144,19 @@ body {
     text-align: justify;
   }
 }
+
+
+
+
+
+
+
+.intro::first-letter {
+  font-size: 2.5em;      /* Más grande */
+  font-weight: bold;     /* Negrita */
+  color: var(--color-blue-2);        /* Color distinto */
+  float: left;           /* Que se alinee tipo "drop cap" */
+  margin-right: 5px;     /* Espacio con el texto */
+  line-height: 1;        /* Ajusta la altura */
+}
+

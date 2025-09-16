@@ -20,6 +20,16 @@
   transition: color 0.3s ease;
 }
 
+/* Opcion del meni activa*/
+.menu a.active svg,
+.menu a.active span {
+  color: var(--color-blue-2);
+}
+/* Mostrar línea también cuando está activo */
+.menu a.active::after {
+  width: 100%;
+}
+
 /* Animación con subrayado elegante */
 .menu a::after {
   content: "";
@@ -50,21 +60,18 @@
 }
 
 @media (max-width: 575.98px) {
-   .menu a span {
+  .menu a span {
     display: none; /* oculta el texto */
     margin-bottom: 5px;
   }
 
-  .menu{
+  .menu {
     padding: 10px 0;
   }
- 
 
   .menu a::after {
-   
-  bottom: -10px;
- 
-}
+    bottom: -10px;
+  }
   /* .menu a svg {
     width: 40px !important;
     height: 40px !important;
