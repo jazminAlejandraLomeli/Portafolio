@@ -1,0 +1,21 @@
+.card-skills2 {
+  background: var(--color-primary); 
+  background: linear-gradient(140deg, 
+    rgba(26, 34, 126, 0.39) 10%, 
+    rgba(0, 187, 212, 0.315) 50%, 
+    rgba(26, 35, 126, 0.43) 100%
+  );
+  border-radius: 5px;
+}
+
+
+ .card-skills {
+  background: var(--color-secondary); /* Color de respaldo */
+  background: linear-gradient(140deg, 
+    rgba(233, 30, 98, 0.281) 10%, 
+    rgba(0, 188, 212, 0.281) 50%, 
+    rgba(233, 30, 99, 0.550) 100%
+  );
+  border-radius: 5px;
+  }
+

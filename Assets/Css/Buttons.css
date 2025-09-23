@@ -14,13 +14,13 @@
 }
 
 .button-primay {
-  background: var(--color-blue);
+  background: var(--color-secondary-2);
   color: var(--color-card);
 }
 
 .button-primay:hover {
   background: var(--color-card);
-  color: var(--color-blue-2);
+  color: var(--color-secondary-2);
 }
 
 .button-primay:before,
@@ -31,7 +31,7 @@
   right: 0;
   height: 2px;
   width: 0;
-  background: var(--color-blue-2);
+   background: var(--color-tertiary);
   transition: 400ms ease all;
 }
 

@@ -10,7 +10,7 @@
 }
 
 .menu a {
-  color: var(--color-Pink); /* Texto blanco para contraste */
+  color: var(--color-primary);
   font-weight: 500;
   text-decoration: none;
   position: relative;
@@ -20,11 +20,13 @@
   transition: color 0.3s ease;
 }
 
-/* Opcion del meni activa*/
+/* Opcion del menu activa*/
 .menu a.active svg,
 .menu a.active span {
-  color: var(--color-blue-2);
+  color: var(--color-primary);
+  font-weight: bold;
 }
+
 /* Mostrar línea también cuando está activo */
 .menu a.active::after {
   width: 100%;
@@ -38,12 +40,12 @@
   bottom: -5px;
   width: 0;
   height: 2px;
-  background: var(--color-blue-2);
+  background: var(--color-secondary);
   transition: width 0.3s ease;
 }
 
 .menu a:hover {
-  color: var(--color-blue-2); /* Cambia el color del texto al hover */
+  color: var(--color-tertiary); /* Cambia el color del texto al hover */
 }
 
 .menu a:hover::after {
